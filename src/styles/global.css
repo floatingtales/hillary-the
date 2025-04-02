@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Segoe UI', sans-serif;
+  --color-primary: #1B1464;
+}

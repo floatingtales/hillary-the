@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+
+import About from "@assets/navbar-assets/about.png"
+import Home from "@assets/navbar-assets/home.png"
+import Project from "@assets/navbar-assets/project.png"
+
+---
+<section id="navbar" class="flex gap-9 pt-28 pr-36 justify-end">
+  <a href="/about">
+    <Image height={40} src={About} alt="About" />
+  </a>
+  <a href="/">
+    <Image height={40} src={Home} alt="Home" />
+  </a>
+  <a href="/project">
+    <Image height={40} src={Project} alt="Project" />
+  </a> 
+</section>

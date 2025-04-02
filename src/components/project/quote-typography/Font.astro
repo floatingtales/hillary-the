@@ -1,0 +1,17 @@
+---
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import SoupTextImage from "@assets/project-assets/quote-typography/soup-text.png";
+import { Image } from "astro:assets";
+---
+
+<section id="font" class="flex flex-col items-center justify-center w-full gap-16">
+  <TitleHorizontalLine title="FONT" />
+  <Image src={SoupTextImage} alt="Soup text" width={SoupTextImage.width/2} />
+  <p class="font-display text-primary text-xl text-center w-5/6">The word "SOUP" uses the Split Ink font by Walter Velez, which was modified to include water droplets and a watery effect. Additional details, such as lines and abstract shapes, were added to enhance its resemblance to soup.
+  </p>
+  <div class="flex gap-14 justify-between items-center w-full">
+    image here
+  </div>
+  <p class="font-display text-primary text-xl text-center w-5/6">The word The word "LIFE" and "FORK" uses the Berlin Sans, while "IS A" and "AND I'M A" uses FORQUE which was modified to include glossy and 3D effect. Under the word “FORK” there is a fork icon as an additional detail.
+  </p>
+</section>

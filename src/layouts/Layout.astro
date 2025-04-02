@@ -1,3 +1,8 @@
+---
+import "@styles/global.css"
+import Navbar from "@components/Navbar.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,10 +10,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Hillary The's Portfolio</title>
 	</head>
-	<body>
-		<slot />
+	<body class="bg-[#FCDBE8]">
+		<div class="bg-[#FCDBE8] w-full h-full">
+			<Navbar />
+			<slot />
+		</div>
 	</body>
 </html>
 

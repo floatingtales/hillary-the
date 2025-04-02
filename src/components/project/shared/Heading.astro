@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets"
+import HorizontalLine from "./HorizontalLine.astro"
+
+const {headingImage, headingText} = Astro.props as { headingImage: ImageMetadata; headingText: string }
+---
+<div class="mt-20">
+  <HorizontalLine />
+  <div class="flex flex-row justify-between w-full items-center">
+    <Image src={headingImage} alt={headingText} width={headingImage.width/3} />
+    <p class="text-2xl text-primary w-2xl font-display text-justify">{headingText}</p>
+  </div>
+  <HorizontalLine />
+</div>
