@@ -1,8 +1,8 @@
 ---
-const { title } = Astro.props as { title:string }
+const { title } = Astro.props as { title: string };
 ---
 
-<div class="flex items-center justify-baseline w-full gap-2 mt-20">
-  <h2 class="font-bold font-display text-2xl text-nowrap">{title}</h2>
-  <hr class="grow border-2 text-primary w-full my-6" />
+<div class="mt-20 flex w-full items-center justify-baseline gap-2">
+  <h2 class="font-display text-2xl font-bold text-nowrap">{title}</h2>
+  <hr class="text-primary my-6 w-full grow border-2" />
 </div>

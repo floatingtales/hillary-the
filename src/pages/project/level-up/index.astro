@@ -1,0 +1,16 @@
+---
+import HeadingImage from "@assets/project-assets/level-up/level-up-banner.png";
+import Heading from "@components/project/shared/Heading.astro";
+import Layout from "@layouts/Layout.astro";
+
+const headingText =
+  "Level Up is a Arcade theme campaign project for matriculation at Ciputra University VCD (Visual Communication Design) for students. I contribute as a graphic designer, creating poster, illustration and social media content.";
+---
+
+<Layout>
+  <div class="flex h-full w-full justify-center">
+    <div class="flex w-full max-w-7xl flex-col gap-4">
+      <Heading headingText={headingText} headingImage={HeadingImage} />
+    </div>
+  </div>
+</Layout>

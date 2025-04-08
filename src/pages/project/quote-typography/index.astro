@@ -1,19 +1,21 @@
 ---
 import Layout from "@layouts/Layout.astro";
 
-import HeadingImage from "@assets/project-assets/quote-typography/quote-typography.png"
+import HeadingImage from "@assets/project-assets/quote-typography/quote-typography.png";
 
 import Banner from "@components/project/quote-typography/Banner.astro";
 import ColorPalette from "@components/project/quote-typography/ColorPalette.astro";
 import Font from "@components/project/quote-typography/Font.astro";
+import ShirtApplication from "@components/project/quote-typography/ShirtApplication.astro";
 import Heading from "@components/project/shared/Heading.astro";
-import ShirtApplication from "@components/project/quote-typography/ShirtApplication.astro"
 
-const headingText = "Quote typography is a project to create screen printed t-shirt of quotes with unique typographic designs according to the selected quote."
+const headingText =
+  "Quote typography is a project to create screen printed t-shirt of quotes with unique typographic designs according to the selected quote.";
 ---
+
 <Layout>
-  <div class="flex w-full h-full justify-center">
-    <div class="flex flex-col gap-4 max-w-7xl w-full">
+  <div class="flex h-full w-full justify-center">
+    <div class="flex w-full max-w-7xl flex-col gap-4">
       <Heading headingText={headingText} headingImage={HeadingImage} />
       <Banner />
       <Font />

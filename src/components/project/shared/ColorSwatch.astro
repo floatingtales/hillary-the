@@ -1,9 +1,11 @@
 ---
-const {colors} = Astro.props as {colors:string[]}
+const { colors } = Astro.props as { colors: string[] };
 ---
 
-<div class="flex items-center justify-center w-full gap-6">
-  {colors.map((color) => (
-    <div class="h-32 w-32 border-2" style={`background-color: ${color}`} />
-  ))}
+<div class="flex w-full items-center justify-center gap-6">
+  {
+    colors.map((color) => (
+      <div class="h-32 w-32 border-2" style={`background-color: ${color}`} />
+    ))
+  }
 </div>

@@ -1,19 +1,37 @@
 ---
 import { Image } from "astro:assets";
 
+import ShirtOne from "@assets/project-assets/quote-typography/shirt-one.png";
+import ShirtThree from "@assets/project-assets/quote-typography/shirt-three.png";
+import ShirtTwo from "@assets/project-assets/quote-typography/shirt-two.png";
 import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
-import ShirtOne from "@assets/project-assets/quote-typography/shirt-one.png"
-import ShirtTwo from "@assets/project-assets/quote-typography/shirt-two.png"
-import ShirtThree from "@assets/project-assets/quote-typography/shirt-three.png"
 ---
 
-<section id="shirt-application" class="flex flex-col items-center justify-center w-full gap-16 pb-16">
+<section
+  id="shirt-application"
+  class="flex w-full flex-col items-center justify-center gap-16 pb-16"
+>
   <TitleHorizontalLine title="SHIRT APPLICATION" />
-  <div class="flex flex-col gap-12 w-full">
-    <div class="flex flex-row gap-12 w-full">
-      <Image src={ShirtOne} alt="Shirt on a woman" width={ShirtOne.width/3} class="flex-1" />
-      <Image src={ShirtTwo} alt="Folded Shirt" width={ShirtTwo.width/3} class="flex-1"/>
+  <div class="flex w-full flex-col gap-12">
+    <div class="flex w-full flex-row gap-12">
+      <Image
+        src={ShirtOne}
+        alt="Shirt on a woman"
+        width={ShirtOne.width / 3}
+        class="flex-1"
+      />
+      <Image
+        src={ShirtTwo}
+        alt="Folded Shirt"
+        width={ShirtTwo.width / 3}
+        class="flex-1"
+      />
     </div>
-    <Image src={ShirtThree} alt="Unfolded Shirt" width={ShirtThree.width/2} class="w-full"/>
+    <Image
+      src={ShirtThree}
+      alt="Unfolded Shirt"
+      width={ShirtThree.width / 2}
+      class="w-full"
+    />
   </div>
 </section>
