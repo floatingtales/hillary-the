@@ -1,9 +1,22 @@
 ---
 import Layout from "@layouts/Layout.astro";
+
+import HeadingImage from "@assets/project-assets/psych-vision/psychvision-banner.png";
+
+import ColorPallete from "@components/project/psych-vision/ColorPallete.astro";
+import FinalResult from "@components/project/psych-vision/FinalResult.astro";
+import Heading from "@components/project/shared/Heading.astro";
+
+const headingText =
+  "Psych Vision is a project to create illustration patterns for merchandise for the Psychology department at Universitas Ciputra.";
 ---
 
 <Layout>
   <div class="flex h-full w-full justify-center">
-    <div class="flex w-full max-w-7xl flex-col gap-4"></div>
+    <div class="flex w-full max-w-7xl flex-col gap-4">
+      <Heading headingImage={HeadingImage} headingText={headingText} />
+      <ColorPallete />
+      <FinalResult />
+    </div>
   </div>
 </Layout>

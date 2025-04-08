@@ -1,0 +1,20 @@
+---
+import ColorSwatch from "../shared/ColorSwatch.astro";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+
+const colors = ["#B291C3", "#542E8F", "#392466", "#F68523", "#EA632D"];
+---
+
+<section
+  id="color-palette"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="COLOR PALETTE" />
+  <ColorSwatch colors={colors} />
+  <p class="font-display text-primary w-4/6 text-center text-xl">
+    Purple is the primary color of the Psychology Department at Ciputra
+    University (UC), with orange as its complementary color. Positioned opposite
+    on the color wheel, they create a bold yet balanced contrast that draws
+    attention.
+  </p>
+</section>

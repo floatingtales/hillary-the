@@ -1,0 +1,27 @@
+---
+import Image from "astro/components/Image.astro";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+
+import PsychVisionResult from "@assets/project-assets/psych-vision/psychvision-result.png";
+---
+
+<section
+  id="final-result"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="FINAL RESULT" />
+  <div class="flex items-center justify-center">
+    <Image
+      src={PsychVisionResult}
+      alt="Psych Vision Result"
+      width={PsychVisionResult.width / 3}
+      class="grow"
+    />
+    <Image
+      src={PsychVisionResult}
+      alt="Psych Vision Result"
+      width={PsychVisionResult.width / 3}
+      class="grow"
+    />
+  </div>
+</section>
