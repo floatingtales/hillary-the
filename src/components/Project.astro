@@ -1,3 +1,33 @@
 ---
-
+import ProjectHeading from "@assets/project-assets/index/project-heading.png";
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
 ---
+
+<Layout>
+  <section id="project-list">
+    <div class="flex h-full w-full justify-center">
+      <div class="flex w-full max-w-7xl flex-col justify-center gap-4">
+        <Image
+          src={ProjectHeading}
+          alt="My Projects"
+          width={ProjectHeading.width / 2}
+        />
+        <div class="flex w-full flex-col gap-20">
+          <div class="flex items-center justify-center gap-20">
+            project observation project two
+          </div>
+          <div class="flex items-center justify-center gap-20">
+            project observation project two
+          </div>
+          <div class="flex items-center justify-center gap-20">
+            project observation project two
+          </div>
+          <div class="flex items-center justify-center gap-20">
+            project observation project two
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
