@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+
+const { image, alt, text } = Astro.props as {
+  image: ImageMetadata;
+  alt: string;
+  text: string[];
+};
+---
+
+<section
+  id="design-concept"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <div class="flex w-full items-center justify-center gap-12">
+    <Image src={image} alt={alt} width={image.width / 3} class="grow" />
+    <div class="border-primary h-3/4 border-2"></div>
+    <div class="flex grow flex-col gap-5">
+      <h2 class="font-display text-primary text-3xl font-bold">
+        Design Concept
+      </h2>
+      {
+        text.map((line) => {
+          return (
+            <p class="font-display text-primary w-5/6 text-xl text-wrap">
+              {line}
+            </p>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+
+import BriefcaseImage from "@assets/project-assets/psych-vision/psychvision-briefcase.png";
+import NotebookImage from "@assets/project-assets/psych-vision/psychvision-notebook.png";
+import PensImage from "@assets/project-assets/psych-vision/psychvision-pens.png";
+import TotebagImage from "@assets/project-assets/psych-vision/psychvision-totebag.png";
+import TumblerImage from "@assets/project-assets/psych-vision/psychvision-tumbler.png";
+---
+
+<section
+  id="merch-list"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="UC PSYCHOLOGY MERCHANDISE" />
+  <div class="flex w-full flex-col items-center justify-center gap-1">
+    <div class="flex flex-wrap items-center justify-center gap-1">
+      <Image
+        src={BriefcaseImage}
+        alt="Briefcase Mockup"
+        width={BriefcaseImage.width / 4}
+        class="grow"
+      />
+      <Image
+        src={NotebookImage}
+        alt="Notebook Mockup"
+        width={NotebookImage.width / 4}
+        class="grow"
+      />
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-1">
+      <Image
+        src={PensImage}
+        alt="Pens Mockup"
+        width={PensImage.width / 4}
+        class="grow"
+      />
+      <Image
+        src={TumblerImage}
+        alt="Notebook Mockup"
+        width={TumblerImage.width / 4}
+        class="grow"
+      />
+      <Image
+        src={TotebagImage}
+        alt="Notebook Mockup"
+        width={TotebagImage.width / 4}
+        class="grow"
+      />
+    </div>
+  </div>
+</section>
