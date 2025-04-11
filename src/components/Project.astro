@@ -1,33 +1,116 @@
 ---
+import AhPekCover from "@assets/project-assets/index/ah-pek-cover.png";
+import BintangKecilCover from "@assets/project-assets/index/bintang-kecil-cover.png";
+import CariTahuSrimulatCover from "@assets/project-assets/index/cari-tahu-srimulat-cover.png";
+import IsyanaAlbumCover from "@assets/project-assets/index/isyana-album-cover.png";
+import LevelUpCover from "@assets/project-assets/index/level-up-cover.png";
+import LoperCover from "@assets/project-assets/index/loper-cover.png";
 import ProjectHeading from "@assets/project-assets/index/project-heading.png";
-import Layout from "@layouts/Layout.astro";
+import PsychVisionCover from "@assets/project-assets/index/psychvision-cover.png";
+import QuoteTypographyCover from "@assets/project-assets/index/quote-typography-cover.png";
+
 import { Image } from "astro:assets";
 ---
 
-<Layout>
-  <section id="project-list">
-    <div class="flex h-full w-full justify-center">
-      <div class="flex w-full max-w-7xl flex-col justify-center gap-4">
-        <Image
-          src={ProjectHeading}
-          alt="My Projects"
-          width={ProjectHeading.width / 2}
-        />
-        <div class="flex w-full flex-col gap-20">
-          <div class="flex items-center justify-center gap-20">
-            project observation project two
+<section id="project-list">
+  <div class="flex h-full w-full justify-center">
+    <div class="my-20 flex w-full max-w-7xl flex-col justify-center gap-20">
+      <Image
+        class="self-center"
+        src={ProjectHeading}
+        alt="My Projects"
+        width={ProjectHeading.width / 2}
+      />
+      <div class="flex w-full flex-col gap-20">
+        <div class="flex items-center justify-center gap-20">
+          <div class="rounded-4xl bg-white p-8">
+            <a href="/project/loper">
+              <Image
+                src={LoperCover}
+                alt="Loper"
+                width={LoperCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </a>
           </div>
-          <div class="flex items-center justify-center gap-20">
-            project observation project two
-          </div>
-          <div class="flex items-center justify-center gap-20">
-            project observation project two
-          </div>
-          <div class="flex items-center justify-center gap-20">
-            project observation project two
-          </div>
+          <a href="/project/tetap-dalam-jiwa">
+            <div class="rounded-4xl bg-white p-8">
+              <Image
+                src={IsyanaAlbumCover}
+                alt="Tetap Dalam Jiwa"
+                width={IsyanaAlbumCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-20">
+          <a href="/project/psych-vision">
+            <div class="rounded-4xl bg-white p-8">
+              <Image
+                src={PsychVisionCover}
+                alt="PsychVision"
+                width={PsychVisionCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </div>
+          </a>
+          <a href="/project/cari-tahu-srimulat">
+            <div class="rounded-4xl bg-white p-8">
+              <Image
+                src={CariTahuSrimulatCover}
+                alt="Cari Tahu Srimulat"
+                width={CariTahuSrimulatCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-20">
+          <a href="/project/bintang-kecil-merdeka">
+            <div class="rounded-4xl bg-white p-8">
+              <Image
+                src={BintangKecilCover}
+                alt="Bintang Kecil Merdeka"
+                width={BintangKecilCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </div>
+          </a>
+          <a href="/project/ah-pek">
+            <div class="rounded-4xl bg-white p-8">
+              <Image
+                src={AhPekCover}
+                alt="Ah Pek"
+                width={AhPekCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-20">
+          <a href="/project/quote-typography">
+            <div class="rounded-4xl bg-white p-8">
+              <Image
+                src={QuoteTypographyCover}
+                alt="Quote Typography"
+                width={QuoteTypographyCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </div>
+          </a>
+          <a href="/project/level-up">
+            <div class="rounded-4xl bg-white p-8">
+              <Image
+                src={LevelUpCover}
+                alt="Level Up"
+                width={LevelUpCover.width / 3}
+                class="grow rounded-2xl"
+              />
+            </div>
+          </a>
         </div>
       </div>
     </div>
-  </section>
-</Layout>
+  </div>
+</section>
