@@ -1,5 +1,10 @@
 ---
 import HeadingImage from "@assets/project-assets/level-up/level-up-banner.png";
+import Banner from "@components/project/level-up/Banner.astro";
+import ColorPalette from "@components/project/level-up/ColorPalette.astro";
+import EnvironmentDesign from "@components/project/level-up/EnvironmentDesign.astro";
+import MascotPose from "@components/project/level-up/MascotPose.astro";
+import Poster from "@components/project/level-up/Poster.astro";
 import Heading from "@components/project/shared/Heading.astro";
 import Layout from "@layouts/Layout.astro";
 
@@ -11,6 +16,11 @@ const headingText =
   <div class="flex h-full w-full justify-center">
     <div class="flex w-full max-w-7xl flex-col gap-4">
       <Heading headingText={headingText} headingImage={HeadingImage} />
+      <Banner />
+      <MascotPose />
+      <ColorPalette />
+      <EnvironmentDesign />
+      <Poster />
     </div>
   </div>
 </Layout>

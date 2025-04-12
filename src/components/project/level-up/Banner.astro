@@ -1,0 +1,47 @@
+---
+import Paisley from "@assets/project-assets/level-up/paisley-mascot.png";
+import Platypo from "@assets/project-assets/level-up/platypo-mascot.png";
+import Vector from "@assets/project-assets/level-up/vector-mascot.png";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="banner"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <div class="flex items-center justify-center">
+    <div class="flex flex-col gap-2">
+      <Image
+        src={Paisley}
+        width={Paisley.width / 2}
+        alt="Paisley as Mascot"
+        class="grow"
+      />
+      <p class="font-display w-full text-center text-2xl font-bold">Paisley</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      <Image
+        src={Vector}
+        width={Vector.width / 2}
+        alt="Vector as Mascot"
+        class="grow"
+      />
+      <p class="font-display w-full text-center text-2xl font-bold">Vector</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      <Image
+        src={Platypo}
+        width={Platypo.width / 2}
+        alt="Platypo as Mascot"
+        class="grow"
+      />
+      <p class="font-display w-full text-center text-2xl font-bold">Platypo</p>
+    </div>
+  </div>
+  <p class="font-display w-full text-center text-2xl">
+    The following are VCD mascots consisting of Paisley, a photographer, Vector,
+    an illustrator, and Platypo, a typography artist. These mascots were then
+    created with a pixel design style, adapting to the concept of the 'Arcade'
+    campaign.
+  </p>
+</section>

@@ -1,0 +1,19 @@
+---
+import ColorSwatch from "@components/project/shared/ColorSwatch.astro";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+
+const colors = ["#F7DF69", "#E86E49", "#E23965", "#279340", "#26335E"];
+---
+
+<section
+  id="color-palette"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="COLOR PALETTE" />
+  <ColorSwatch colors={colors} />
+  <p class="font-display text-primary w-5/6 text-center text-xl">
+    The Level Up campaign uses an arcade-themed color palette typically includes
+    bold, vibrant, and neon colors that evoke the retro-futuristic aesthetic of
+    classic arcade games from the '80s and '90s.
+  </p>
+</section>

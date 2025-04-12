@@ -1,0 +1,26 @@
+---
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+
+import PaisleyPose from "@assets/project-assets/level-up/paisley-pose.png";
+import VectorPose from "@assets/project-assets/level-up/vector-pose.png";
+---
+
+<section
+  id="mascot-pose"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="MASCOT POSE" />
+  <div class="flex items-center justify-center">
+    <Image
+      src={PaisleyPose}
+      alt="Paisley Hand Waving"
+      width={PaisleyPose.width / 3}
+    />
+    <Image
+      src={VectorPose}
+      alt="Vector Hand Waving"
+      width={VectorPose.width / 3}
+    />
+  </div>
+</section>

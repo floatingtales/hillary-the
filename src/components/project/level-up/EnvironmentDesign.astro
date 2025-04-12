@@ -1,0 +1,38 @@
+---
+import BackgroundClassroom from "@assets/project-assets/level-up/background-classroom.png";
+import BackgroundLift from "@assets/project-assets/level-up/background-lift.png";
+import BackgroundStudio from "@assets/project-assets/level-up/background-studio.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="environment-design"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="ENVIRONMENT DESIGN" />
+  <div class="flex items-center justify-center gap-8">
+    <Image
+      src={BackgroundLift}
+      alt="Bacground Lift"
+      width={BackgroundLift.width / 3}
+      class="grow"
+    />
+    <Image
+      src={BackgroundStudio}
+      alt="Bacground Studio"
+      width={BackgroundStudio.width / 3}
+      class="grow"
+    />
+    <Image
+      src={BackgroundClassroom}
+      alt="Bacground Classroom"
+      width={BackgroundClassroom.width / 3}
+      class="grow"
+    />
+  </div>
+  <p class="font-display text-primary w-5/6 text-center text-xl">
+    The following is an environmental concept based on Ciputra University. This
+    illustration uses as a supporting element in creating visual content.
+  </p>
+</section>

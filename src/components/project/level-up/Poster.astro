@@ -1,0 +1,35 @@
+---
+import PosterOne from "@assets/project-assets/level-up/poster-one.png";
+import PosterThree from "@assets/project-assets/level-up/poster-three.png";
+import PosterTwo from "@assets/project-assets/level-up/poster-two.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="poster"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="POSTER" />
+
+  <div class="flex items-center justify-center">
+    <Image
+      src={PosterOne}
+      alt="Poster One"
+      width={PosterOne.width / 3}
+      class="grow"
+    />
+    <Image
+      src={PosterTwo}
+      alt="Poster Two"
+      width={PosterTwo.width / 3}
+      class="grow"
+    />
+    <Image
+      src={PosterThree}
+      alt="Poster Three"
+      width={PosterThree.width / 3}
+      class="grow"
+    />
+  </div>
+</section>
