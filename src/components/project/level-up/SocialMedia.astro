@@ -1,0 +1,35 @@
+---
+import FeedMockup from "@assets/project-assets/level-up/feed-mockup.png";
+import InstagramMockup from "@assets/project-assets/level-up/instagram-mockup.png";
+import StoryMockup from "@assets/project-assets/level-up/story-mockup.png";
+
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="social-media"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="SOCIAL MEDIA" />
+  <div class="flex items-center justify-center gap-8">
+    <Image
+      src={FeedMockup}
+      alt="Instagram Feed Mockup"
+      width={FeedMockup.width / 3}
+      class="grow"
+    />
+    <Image
+      src={InstagramMockup}
+      alt="Instagram Profile Mockup"
+      width={InstagramMockup.width / 3}
+      class="grow"
+    />
+    <Image
+      src={StoryMockup}
+      alt="Instagram Story Mockup"
+      width={StoryMockup.width / 3}
+      class="grow"
+    />
+  </div>
+</section>
