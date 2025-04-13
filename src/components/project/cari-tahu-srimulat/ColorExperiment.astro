@@ -1,0 +1,31 @@
+---
+import OptionOne from "@assets/project-assets/cari-tahu-srimulat/option-one.png";
+import OptionTwo from "@assets/project-assets/cari-tahu-srimulat/option-two.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="color-experiment"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="COLOR EXPERIMENT" />
+  <div class="flex items-center justify-center">
+    <Image
+      src={OptionOne}
+      alt="Option One"
+      width={OptionOne.width / 3}
+      class="grow"
+    />
+    <Image
+      src={OptionTwo}
+      alt="Option Two"
+      width={OptionTwo.width / 3}
+      class="grow"
+    />
+  </div>
+  <p class="font-display w-5/6 text-center text-2xl">
+    The following is the process of selecting the color palette of the Srimulat
+    mascot. In the end, the color palette chosen was no. 1.
+  </p>
+</section>

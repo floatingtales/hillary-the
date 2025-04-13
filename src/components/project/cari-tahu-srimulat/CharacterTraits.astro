@@ -1,0 +1,33 @@
+---
+import CharacterImage from "@assets/project-assets/cari-tahu-srimulat/character-traits.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="character-traits"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="MASCOT CHARACTER TRAITS" />
+  <div class="flex w-full gap-10">
+    <Image
+      src={CharacterImage}
+      alt="Character Headshot"
+      width={CharacterImage.width / 3}
+    />
+    <div class="border-primary h-full border-2"></div>
+    <div class="flex grow flex-col justify-center gap-2">
+      <p class="font-display text-primary text-2xl">
+        <span class="font-bold">Name:</span> Detektif Cari tahu (seeker Detective)
+      </p>
+      <p class="font-display text-primary text-2xl">
+        <span class="font-bold">Fashion:</span> Vintage style, wearing a fedora hat
+        along with a shirt and long coat
+      </p>
+      <p class="font-display text-primary text-2xl">
+        <span class="font-bold"> Personality: </span> has a high curiosity and is
+        looking for the best strategist to spread awareness of local Indonesian culture.
+      </p>
+    </div>
+  </div>
+</section>

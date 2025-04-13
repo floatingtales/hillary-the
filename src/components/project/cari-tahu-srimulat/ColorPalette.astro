@@ -1,0 +1,18 @@
+---
+import ColorSwatch from "@components/project/shared/ColorSwatch.astro";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+
+const colors = ["#FFEBD7", "#D1A68D", "#31436E", "#EEF0F2", "#9E285E"];
+---
+
+<section
+  id="color-palette"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="COLOR PALETTE" />
+  <ColorSwatch colors={colors} />
+  <p class="font-display text-primary w-5/6 text-center text-2xl">
+    The Srimulat mascot uses retro-themed colors in accordance with the concept
+    of the Srimulat Event, which is an Indonesian cultural and arts event.
+  </p>
+</section>

@@ -1,0 +1,15 @@
+---
+import PosterImage from "@assets/project-assets/cari-tahu-srimulat/poster.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section id="poster" class="flex w-full flex-col items-center justify-center">
+  <TitleHorizontalLine title="POSTER" />
+  <Image
+    src={PosterImage}
+    width={PosterImage.width / 3}
+    alt="Poster Image"
+    class="grow"
+  />
+</section>

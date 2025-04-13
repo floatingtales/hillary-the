@@ -1,0 +1,37 @@
+---
+import Pose1 from "@assets/project-assets/cari-tahu-srimulat/pose-1.png";
+import Pose2 from "@assets/project-assets/cari-tahu-srimulat/pose-2.png";
+import Pose3 from "@assets/project-assets/cari-tahu-srimulat/pose-3.png";
+import Pose4 from "@assets/project-assets/cari-tahu-srimulat/pose-4.png";
+import Pose5 from "@assets/project-assets/cari-tahu-srimulat/pose-5.png";
+import Pose6 from "@assets/project-assets/cari-tahu-srimulat/pose-6.png";
+import Pose7 from "@assets/project-assets/cari-tahu-srimulat/pose-7.png";
+import Pose8 from "@assets/project-assets/cari-tahu-srimulat/pose-8.png";
+import Pose9 from "@assets/project-assets/cari-tahu-srimulat/pose-9.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="mascot-pose"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="MASCOT POSE" />
+  <div class="flex w-5/6 flex-col items-center justify-center">
+    <div class="flex w-full items-center justify-center">
+      <Image src={Pose1} class="grow" width={Pose1.width / 3} alt="Pose 1" />
+      <Image src={Pose2} class="grow" width={Pose2.width / 3} alt="Pose 2" />
+      <Image src={Pose3} class="grow" width={Pose3.width / 3} alt="Pose 3" />
+    </div>
+    <div class="flex w-full items-center justify-center">
+      <Image src={Pose4} class="grow" width={Pose4.width / 3} alt="Pose 4" />
+      <Image src={Pose5} class="grow" width={Pose5.width / 3} alt="Pose 5" />
+      <Image src={Pose6} class="grow" width={Pose6.width / 3} alt="Pose 6" />
+    </div>
+    <div class="flex w-full items-center justify-center">
+      <Image src={Pose7} class="grow" width={Pose7.width / 3} alt="Pose 7" />
+      <Image src={Pose8} class="grow" width={Pose8.width / 3} alt="Pose 8" />
+      <Image src={Pose9} class="grow" width={Pose9.width / 3} alt="Pose 9" />
+    </div>
+  </div>
+</section>

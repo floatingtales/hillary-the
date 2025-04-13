@@ -1,0 +1,34 @@
+---
+import FaceOld from "@assets/project-assets/cari-tahu-srimulat/face-old.png";
+import FaceYoung from "@assets/project-assets/cari-tahu-srimulat/face-young.png";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="face-sketch"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <h2 class="font-display w-full text-center text-3xl font-bold">
+    MASCOT FACE SKETCH
+  </h2>
+  <div class="flex items-center justify-center gap-4">
+    <Image
+      src={FaceYoung}
+      alt="Young Detective"
+      width={FaceYoung.width / 3}
+      class="grow"
+    />
+    <div class="border-primary h-full border-2"></div>
+    <Image
+      src={FaceOld}
+      alt="Old Detective"
+      width={FaceOld.width / 3}
+      class="grow"
+    />
+  </div>
+  <p class="font-display w-5/6 text-center text-2xl">
+    I made a sketch of the face of the young and old version of the Srimulat
+    mascot. In the end, the young version was chosen because Gen Z is the target
+    audience of Cari Tahu Srimulat
+  </p>
+</section>

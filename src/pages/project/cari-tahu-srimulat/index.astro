@@ -1,0 +1,32 @@
+---
+import HeadingImage from "@assets/project-assets/cari-tahu-srimulat/banner.png";
+import CharacterTraits from "@components/project/cari-tahu-srimulat/CharacterTraits.astro";
+import ColorExperiment from "@components/project/cari-tahu-srimulat/ColorExperiment.astro";
+import ColorPalette from "@components/project/cari-tahu-srimulat/ColorPalette.astro";
+import ComedianFace from "@components/project/cari-tahu-srimulat/ComedianFace.astro";
+import FaceSketch from "@components/project/cari-tahu-srimulat/FaceSketch.astro";
+import MascotPose from "@components/project/cari-tahu-srimulat/MascotPose.astro";
+import Poster from "@components/project/cari-tahu-srimulat/Poster.astro";
+import SocialMedia from "@components/project/cari-tahu-srimulat/SocialMedia.astro";
+import Heading from "@components/project/shared/Heading.astro";
+import Layout from "@layouts/Layout.astro";
+
+const headingText =
+  "Creating a mascot for the CARI TAHU SRIMULAT event which features an exhibition, seminar, comedy drama performance, and Srimulat marketing strategy competition for Gen Z. This event aims to introduce and raise awareness of Indonesian culture among the younger generation.";
+---
+
+<Layout>
+  <div class="flex h-full w-full justify-center">
+    <div class="flex w-full max-w-7xl flex-col gap-4">
+      <Heading headingText={headingText} headingImage={HeadingImage} />
+      <FaceSketch />
+      <ColorExperiment />
+      <ColorPalette />
+      <CharacterTraits />
+      <MascotPose />
+      <ComedianFace />
+      <SocialMedia />
+      <Poster />
+    </div>
+  </div>
+</Layout>

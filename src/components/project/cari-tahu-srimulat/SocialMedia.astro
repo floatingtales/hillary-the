@@ -1,0 +1,41 @@
+---
+import PhoneMockupOne from "@assets/project-assets/cari-tahu-srimulat/phone-mockup-one.png";
+import PhoneMockupTwo from "@assets/project-assets/cari-tahu-srimulat/phone-mockup-two.png";
+import Story1 from "@assets/project-assets/cari-tahu-srimulat/story-1.png";
+import Story2 from "@assets/project-assets/cari-tahu-srimulat/story-2.png";
+import Story3 from "@assets/project-assets/cari-tahu-srimulat/story-3.png";
+import Story4 from "@assets/project-assets/cari-tahu-srimulat/story-4.png";
+import Story5 from "@assets/project-assets/cari-tahu-srimulat/story-5.png";
+import Story6 from "@assets/project-assets/cari-tahu-srimulat/story-6.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="social-media"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="SOCIAL MEDIA" />
+  <div class="flex items-center justify-center gap-16">
+    <Image
+      src={PhoneMockupOne}
+      alt="Phone Mockup One"
+      width={PhoneMockupOne.width / 3}
+    />
+    <Image
+      src={PhoneMockupTwo}
+      alt="Phone Mockup Two"
+      width={PhoneMockupTwo.width / 3}
+    />
+  </div>
+  <div class="flex items-center justify-center gap-16">
+    <Image src={Story1} alt="Story 1" width={Story1.width / 3} />
+    <Image src={Story2} alt="Story 2" width={Story2.width / 3} />
+    <Image src={Story3} alt="Story 3" width={Story3.width / 3} />
+  </div>
+  <div class="flex items-center justify-center gap-16">
+    <Image src={Story4} alt="Story 4" width={Story4.width / 3} />
+    <Image src={Story5} alt="Story 5" width={Story5.width / 3} />
+    <Image src={Story6} alt="Story 6" width={Story6.width / 3} />
+  </div>
+</section>
