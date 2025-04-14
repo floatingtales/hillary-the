@@ -1,0 +1,23 @@
+---
+import BannerImage from "@assets/project-assets/loper/loper-banner.png";
+import { Image } from "astro:assets";
+import HorizontalLine from "../shared/HorizontalLine.astro";
+---
+
+<section
+  id="banner"
+  class="mb-28 flex w-full flex-col items-center justify-center gap-8"
+>
+  <Image
+    src={BannerImage}
+    alt="Loper Banner Image"
+    width={BannerImage.width / 2}
+  />
+  <div class="w-1/2">
+    <HorizontalLine />
+  </div>
+  <p class="font-display text-primary w-1/2 text-center text-2xl">
+    The font used is called Shelby Wheels 2.0 by Heaven Castro. The font was
+    then modified to have a folded effect, as if the logo was made of paper.
+  </p>
+</section>

@@ -1,0 +1,27 @@
+---
+import StandeeDiagonal from "@assets/project-assets/loper/standee-diagonal.png";
+import StandeeStraight from "@assets/project-assets/loper/standee-straight.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="billboard"
+  class="flex w-full flex-col items-center justify-center gap-8"
+>
+  <TitleHorizontalLine title="BANNER" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <Image
+      src={StandeeStraight}
+      alt="Loper Poster"
+      width={StandeeStraight.width / 3}
+      class="grow"
+    />
+    <Image
+      src={StandeeDiagonal}
+      alt="Brick Billboard"
+      width={StandeeDiagonal.width / 3}
+      class="grow"
+    />
+  </div>
+</section>

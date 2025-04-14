@@ -1,0 +1,27 @@
+---
+import BillboardBrick from "@assets/project-assets/loper/billboard-brick.png";
+import BillboardOutdoor from "@assets/project-assets/loper/billboard-outdoors.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="billboard"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="BILLBOARD" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <Image
+      src={BillboardOutdoor}
+      alt="Outdoor Billboard"
+      width={BillboardOutdoor.width / 3}
+      class="grow"
+    />
+    <Image
+      src={BillboardBrick}
+      alt="Brick Billboard"
+      width={BillboardBrick.width / 3}
+      class="grow"
+    />
+  </div>
+</section>

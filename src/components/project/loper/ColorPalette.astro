@@ -1,0 +1,32 @@
+---
+import HeadingImage from "@assets/project-assets/loper/loper-heading.png";
+import Palette from "@assets/project-assets/loper/loper-palette.png";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="color-palette"
+  class="mb-28 flex w-full flex-col items-center justify-center gap-16"
+>
+  <div class="flex w-full items-center justify-center gap-12">
+    <div class="flex grow flex-col items-center justify-center gap-10">
+      <Image src={HeadingImage} alt="Loper Logo" />
+      <Image
+        src={Palette}
+        alt="Loper Color Palette"
+        width={Palette.width / 2}
+      />
+    </div>
+    <div class="border-primary h-3/4 border-2"></div>
+    <div class="flex grow flex-col gap-5">
+      <h2 class="font-display text-primary text-3xl font-bold">
+        Color Palette
+      </h2>
+      <p class="font-display text-primary w-5/6 text-justify text-2xl">
+        The Loper logo uses pastel and earth colors because it is in accordance
+        with Loper's business concept which focuses on recycling used paper into
+        more valuable products.
+      </p>
+    </div>
+  </div>
+</section>

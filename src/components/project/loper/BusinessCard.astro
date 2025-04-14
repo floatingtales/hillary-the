@@ -1,0 +1,27 @@
+---
+import BusinessCardOne from "@assets/project-assets/loper/business-card-one.png";
+import BusinessCardTwo from "@assets/project-assets/loper/business-card-two.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="billboard"
+  class="mb-10 flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="BUSINESS CARD" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <Image
+      src={BusinessCardOne}
+      alt="Loper Poster"
+      width={BusinessCardOne.width / 3}
+      class="grow"
+    />
+    <Image
+      src={BusinessCardTwo}
+      alt="Brick Billboard"
+      width={BusinessCardTwo.width / 3}
+      class="grow"
+    />
+  </div>
+</section>

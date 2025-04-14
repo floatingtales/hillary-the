@@ -1,5 +1,12 @@
 ---
 import HeadingImage from "@assets/project-assets/loper/loper-heading.png";
+import Banner from "@components/project/loper/Banner.astro";
+import BannerStandee from "@components/project/loper/BannerStandee.astro";
+import Billboard from "@components/project/loper/Billboard.astro";
+import BusinessCard from "@components/project/loper/BusinessCard.astro";
+import ColorPalette from "@components/project/loper/ColorPalette.astro";
+import IllustrationMascot from "@components/project/loper/IllustrationMascot.astro";
+import Poster from "@components/project/loper/Poster.astro";
 import Heading from "@components/project/shared/Heading.astro";
 import Layout from "@layouts/Layout.astro";
 
@@ -11,6 +18,13 @@ const headingText =
   <div class="flex h-full w-full justify-center">
     <div class="flex w-full max-w-7xl flex-col gap-4">
       <Heading headingImage={HeadingImage} headingText={headingText} />
+      <Banner />
+      <ColorPalette />
+      <IllustrationMascot />
+      <Billboard />
+      <Poster />
+      <BannerStandee />
+      <BusinessCard />
     </div>
   </div>
 </Layout>

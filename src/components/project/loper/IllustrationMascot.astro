@@ -1,0 +1,25 @@
+---
+import LoperMascot from "@assets/project-assets/loper/loper-mascot.png";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="illustration-mascot"
+  class="mb-28 flex w-full flex-col items-center justify-center gap-10"
+>
+  <h3 class="font-display text-primary text-3xl font-bold">
+    ILLUSTRATION MASCOT
+  </h3>
+  <Image
+    src={LoperMascot}
+    alt="Loper Mascot"
+    width={LoperMascot.width / 2}
+    class="grow"
+  />
+  <p class="font-display text-primary w-5/6 text-center text-2xl">
+    The following is an illustration of Marcella (yellow), Juliet (pink),
+    Pricilia (purple), Hillary (green) and Agnes (orange) as the managers/group
+    members of the Loper business project. This illustration element acts as a
+    mascot and supporting design asset.
+  </p>
+</section>

@@ -1,0 +1,27 @@
+---
+import FlyerImage from "@assets/project-assets/loper/flyer.png";
+import PosterImage from "@assets/project-assets/loper/poster.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="billboard"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="POSTER" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <Image
+      src={PosterImage}
+      alt="Loper Poster"
+      width={PosterImage.width / 3}
+      class="grow"
+    />
+    <Image
+      src={FlyerImage}
+      alt="Brick Billboard"
+      width={FlyerImage.width / 3}
+      class="grow"
+    />
+  </div>
+</section>
