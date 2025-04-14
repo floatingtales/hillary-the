@@ -1,0 +1,16 @@
+---
+import HeadingImage from "@assets/project-assets/loper/loper-heading.png";
+import Heading from "@components/project/shared/Heading.astro";
+import Layout from "@layouts/Layout.astro";
+
+const headingText =
+  "Loper is a group project for the Entrepreneurship Innovation in Creative Industry course, focused on upcycling hoarded paper into marketable products.";
+---
+
+<Layout>
+  <div class="flex h-full w-full justify-center">
+    <div class="flex w-full max-w-7xl flex-col gap-4">
+      <Heading headingImage={HeadingImage} headingText={headingText} />
+    </div>
+  </div>
+</Layout>
