@@ -1,0 +1,18 @@
+---
+import AlbumGiftImage from "@assets/project-assets/isyana-album/merch.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="album-box"
+  class="mb-6 flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="ALBUM GIFT" />
+  <Image
+    src={AlbumGiftImage}
+    alt="Album Gift"
+    width={AlbumGiftImage.width / 3}
+    class="grow"
+  />
+</section>

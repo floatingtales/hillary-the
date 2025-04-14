@@ -1,0 +1,36 @@
+---
+import BookletBack from "@assets/project-assets/isyana-album/booklet-back.png";
+import BookletFront from "@assets/project-assets/isyana-album/booklet-front.png";
+import BookletInside from "@assets/project-assets/isyana-album/booklet-inside.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="album-cover"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="ALBUM COVER" />
+  <div class="flex w-full flex-col items-center justify-center">
+    <div class="flex w-full items-center justify-center">
+      <Image
+        src={BookletFront}
+        alt="Booklet Front"
+        width={BookletFront.width / 3}
+        class="grow"
+      />
+      <Image
+        src={BookletBack}
+        alt="Booklet Back"
+        width={BookletBack.width / 3}
+        class="grow"
+      />
+    </div>
+    <Image
+      src={BookletInside}
+      alt="Booklet Inside"
+      width={BookletInside.width / 2}
+      class="grow"
+    />
+  </div>
+</section>

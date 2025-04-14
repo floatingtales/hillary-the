@@ -1,0 +1,76 @@
+---
+import Illustration1 from "@assets/project-assets/isyana-album/illustration-1.png";
+import Illustration2 from "@assets/project-assets/isyana-album/illustration-2.png";
+import Illustration3 from "@assets/project-assets/isyana-album/illustration-3.png";
+import Illustration4 from "@assets/project-assets/isyana-album/illustration-4.png";
+import Illustration5 from "@assets/project-assets/isyana-album/illustration-5.png";
+import Illustration6 from "@assets/project-assets/isyana-album/illustration-6.png";
+import Illustration7 from "@assets/project-assets/isyana-album/illustration-7.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="album-illustration"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="ALBUM ILLUSTRATION" />
+  <div class="flex w-5/6 flex-col items-center justify-center gap-8">
+    <div class="flex w-full items-center justify-center">
+      <Image
+        src={Illustration1}
+        alt="Illustration 1"
+        width={Illustration1.width / 3}
+        class="grow"
+      />
+      <Image
+        src={Illustration2}
+        alt="Illustration 2"
+        width={Illustration2.width / 3}
+        class="grow"
+      />
+      <Image
+        src={Illustration3}
+        alt="Illustration 3"
+        width={Illustration3.width / 3}
+        class="grow"
+      />
+    </div>
+    <div class="flex w-full items-center justify-center">
+      <Image
+        src={Illustration4}
+        alt="Illustration 4"
+        width={Illustration4.width / 3}
+        class="grow"
+      />
+      <Image
+        src={Illustration5}
+        alt="Illustration 5"
+        width={Illustration5.width / 3}
+        class="grow"
+      />
+      <Image
+        src={Illustration6}
+        alt="Illustration 6"
+        width={Illustration6.width / 3}
+        class="grow"
+      />
+    </div>
+    <div class="flex w-full items-center justify-center gap-10">
+      <Image
+        src={Illustration7}
+        alt="Illustration 7"
+        width={Illustration7.width / 4}
+        class="grow"
+      />
+      <div class="flex w-3/8 justify-center">
+        <p class="font-display text-primary text-2xl">
+          These illustration are called "Glowing Soul" that depict love as a
+          spiritual and transcendent bond. Even in separation, souls remain
+          united by love's eternal light, symbolizing loyalty and an everlasting
+          connection.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

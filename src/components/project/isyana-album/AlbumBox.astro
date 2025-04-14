@@ -1,0 +1,18 @@
+---
+import AlbumBoxImage from "@assets/project-assets/isyana-album/album-box.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="album-box"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="ALBUM BOX" />
+  <Image
+    src={AlbumBoxImage}
+    alt="Album Box"
+    width={AlbumBoxImage.width / 3}
+    class="grow"
+  />
+</section>

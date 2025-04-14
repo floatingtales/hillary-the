@@ -1,0 +1,40 @@
+---
+import ConceptImage from "@assets/project-assets/isyana-album/album-cover.png";
+import HeadingImage from "@assets/project-assets/isyana-album/isyana-banner.png";
+import AlbumBox from "@components/project/isyana-album/AlbumBox.astro";
+import AlbumCover from "@components/project/isyana-album/AlbumCover.astro";
+import AlbumGift from "@components/project/isyana-album/AlbumGift.astro";
+import AlbumIllustration from "@components/project/isyana-album/AlbumIllustration.astro";
+import ColorPalette from "@components/project/isyana-album/ColorPalette.astro";
+import Font from "@components/project/isyana-album/Font.astro";
+import DesignConcept from "@components/project/shared/DesignConcept.astro";
+import Heading from "@components/project/shared/Heading.astro";
+import Layout from "@layouts/Layout.astro";
+
+const conceptText = [
+  "The heart symbolizes deep emotions and love, reflected in its heartbeat. Even in separation, the emotional bond remains in the heart, representing loyalty and eternal love.",
+  "The background represent true love like a galaxy—limitless, eternal, and magical. Though celestial bodies may drift apart, they remain connected by gravity, just as true love endures through loyalty and memories despite separation.",
+];
+
+const headingText =
+  "'Tetap Dalam Jiwa' by Isyana Sarasvati is an iconic song about love, separation, and enduring loyalty. The album explores themes of love, loss, and acceptance, offering a soothing journey for those seeking meaning in heartbreak and healing.";
+---
+
+<Layout>
+  <div class="flex h-full w-full justify-center">
+    <div class="flex w-full max-w-7xl flex-col gap-4">
+      <Heading headingText={headingText} headingImage={HeadingImage} />
+      <DesignConcept
+        image={ConceptImage}
+        alt="Concept Art"
+        text={conceptText}
+      />
+      <ColorPalette />
+      <Font />
+      <AlbumIllustration />
+      <AlbumCover />
+      <AlbumBox />
+      <AlbumGift />
+    </div>
+  </div>
+</Layout>
