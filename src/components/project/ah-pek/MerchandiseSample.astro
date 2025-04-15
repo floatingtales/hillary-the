@@ -1,0 +1,27 @@
+---
+import MerchOne from "@assets/project-assets/ah-pek/merch-one.png";
+import MerchTwo from "@assets/project-assets/ah-pek/merch-two.png";
+import { Image } from "astro:assets";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+---
+
+<section
+  id="merch-sample"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="MERCHANDISE SAMPLE" />
+  <div class="flex w-full flex-col items-center justify-center gap-4">
+    <Image
+      src={MerchOne}
+      width={MerchOne.width / 3}
+      alt="Ah Pek Making Coffee"
+      class="grow"
+    />
+    <Image
+      src={MerchTwo}
+      width={MerchTwo.width / 3}
+      alt="Ah Pek Making Toast"
+      class="grow"
+    />
+  </div>
+</section>

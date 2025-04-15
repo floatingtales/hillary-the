@@ -1,0 +1,84 @@
+---
+import CookieJar from "@assets/project-assets/ah-pek/merch-cookie-jar.png";
+import MugPlate from "@assets/project-assets/ah-pek/merch-mug-plate.png";
+import Mug from "@assets/project-assets/ah-pek/merch-mug.png";
+import PotBack from "@assets/project-assets/ah-pek/merch-pot-back.png";
+import PotFront from "@assets/project-assets/ah-pek/merch-pot-front.png";
+import SnackPlate from "@assets/project-assets/ah-pek/merch-snack-plate.png";
+import { Image } from "astro:assets";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+---
+
+<section
+  id="mascot-illustration"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="MASCOT ILLUSTRATION" />
+  <div class="flex w-full items-center justify-center gap-2">
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image
+        src={PotBack}
+        width={PotBack.width / 3}
+        alt="Coffee Pot Back"
+        class="grow"
+      />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Coffee Pot Back View
+      </p>
+    </div>
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image
+        src={PotFront}
+        width={PotFront.width / 3}
+        alt="Coffee Pot Front"
+        class="grow"
+      />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Coffee Pot Front View
+      </p>
+    </div>
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image
+        src={CookieJar}
+        width={CookieJar.width / 3}
+        alt="Cookie Jar"
+        class="grow"
+      />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Cookie Jar
+      </p>
+    </div>
+  </div>
+  <div class="flex w-full items-center justify-center gap-2">
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image src={Mug} width={Mug.width / 3} alt="Coffee Mug" class="grow" />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Coffee Mug
+      </p>
+    </div>
+  </div>
+  <div class="flex items-center justify-center gap-12">
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image
+        src={SnackPlate}
+        width={SnackPlate.width / 3}
+        alt="Snack Plate"
+        class="grow"
+      />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Snack Plate
+      </p>
+    </div>
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image
+        src={MugPlate}
+        width={MugPlate.width / 3}
+        alt="Mug Plate"
+        class="grow"
+      />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Mug Plate
+      </p>
+    </div>
+  </div>
+</section>

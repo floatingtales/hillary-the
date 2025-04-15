@@ -1,0 +1,31 @@
+---
+import MoodboardImage from "@assets/project-assets/ah-pek/moodboard.png";
+import { Image } from "astro:assets";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+---
+
+<section
+  id="moodboard"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="MOODBOARD & COLOR PALETTE" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <Image
+      src={MoodboardImage}
+      width={MoodboardImage.width / 3}
+      alt="Ah Pek Moodboard"
+      class="grow"
+    />
+    <div class="flex flex-col items-center justify-center gap-6">
+      <div class="h-32 w-32 border-2 bg-[#FFFBF2]"></div>
+      <div class="h-32 w-32 border-2 bg-[#5E865C]"></div>
+      <div class="h-32 w-32 border-2 bg-[#1F4352]"></div>
+      <div class="h-32 w-32 border-2 bg-[#ABC6BC]"></div>
+    </div>
+  </div>
+  <p class="font-display text-primary w-5/8 text-center text-2xl">
+    Ah Pek has a traditional Chinese mood with a modern twist, serving authentic
+    Indo-Malay dishes. Ah Pek combines traditional Chinese design with modern
+    elements, featuring a monochromatic teal green color palette.
+  </p>
+</section>

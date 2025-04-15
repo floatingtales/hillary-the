@@ -1,0 +1,30 @@
+---
+import HeadingImage from "@assets/project-assets/ah-pek/heading.png";
+import DesignTheme from "@components/project/ah-pek/DesignTheme.astro";
+import MascotIllustration from "@components/project/ah-pek/MascotIllustration.astro";
+import MerchandiseDesign from "@components/project/ah-pek/MerchandiseDesign.astro";
+import MerchandiseSample from "@components/project/ah-pek/MerchandiseSample.astro";
+import Moodboard from "@components/project/ah-pek/Moodboard.astro";
+import PatternDesign from "@components/project/ah-pek/PatternDesign.astro";
+import SupportDesign from "@components/project/ah-pek/SupportDesign.astro";
+import Heading from "@components/project/shared/Heading.astro";
+import Layout from "@layouts/Layout.astro";
+
+const headingText =
+  "Designing merchandise for AH PEK Surabaya branch with a concept inspired by the city's identity. This merchandise consists of a mug, cookie jar, teapot, glass plate and snack plate.";
+---
+
+<Layout>
+  <div class="flex h-full w-full justify-center">
+    <div class="flex w-full max-w-7xl flex-col gap-4">
+      <Heading headingText={headingText} headingImage={HeadingImage} />
+      <DesignTheme />
+      <Moodboard />
+      <MascotIllustration />
+      <PatternDesign />
+      <SupportDesign />
+      <MerchandiseDesign />
+      <MerchandiseSample />
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,41 @@
+---
+import CoffeeEnjoying from "@assets/project-assets/ah-pek/mascot-coffee-enjoying.png";
+import CoffeeMaking from "@assets/project-assets/ah-pek/mascot-coffee-making.png";
+import CoffeeServing from "@assets/project-assets/ah-pek/mascot-coffee-serving.png";
+import ToastMaking from "@assets/project-assets/ah-pek/mascot-toast-making.png";
+import { Image } from "astro:assets";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+---
+
+<section
+  id="mascot-illustration"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="MASCOT ILLUSTRATION" />
+  <div class="flex w-full items-center justify-center gap-4">
+    <Image
+      src={CoffeeMaking}
+      width={CoffeeMaking.width / 3}
+      alt="Ah Pek Making Coffee"
+    />
+    <Image
+      src={ToastMaking}
+      width={ToastMaking.width / 3}
+      alt="Ah Pek Making Toast"
+    />
+    <Image
+      src={CoffeeEnjoying}
+      width={CoffeeEnjoying.width / 3}
+      alt="Ah Pek Enjoying Coffee"
+    />
+    <Image
+      src={CoffeeServing}
+      width={CoffeeServing.width / 3}
+      alt="Ah Pek Serving Coffee"
+    />
+  </div>
+  <p class="font-display text-primary text-center text-2xl">
+    This illustration of the mascot Ah Pek portrays a hardworking and patient
+    restaurant owner.
+  </p>
+</section>

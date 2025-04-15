@@ -1,0 +1,22 @@
+---
+import Pattern from "@assets/project-assets/ah-pek/pattern.png";
+import { Image } from "astro:assets";
+import TitleHorizontalLine from "../shared/TitleHorizontalLine.astro";
+---
+
+<section
+  id="pattern-design"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="PATTERN DESIGN" />
+  <Image
+    src={Pattern}
+    width={Pattern.width / 2}
+    alt="Pattern Design"
+    class="grow"
+  />
+  <p class="font-display text-primary text-center text-2xl">
+    The following is a floral and Sura & Baya pattern design with a Javanese
+    batik pattern.
+  </p>
+</section>
