@@ -1,6 +1,6 @@
 ---
-import FlyerImage from "@assets/project-assets/loper/flyer.png";
-import PosterImage from "@assets/project-assets/loper/poster.png";
+import PosterRolled from "@assets/project-assets/bintang-kecil-merdeka/poster-rolled.png";
+import PosterWall from "@assets/project-assets/bintang-kecil-merdeka/poster-wall.png";
 import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
 import { Image } from "astro:assets";
 ---
@@ -12,15 +12,15 @@ import { Image } from "astro:assets";
   <TitleHorizontalLine title="POSTER" />
   <div class="flex w-full items-center justify-center gap-8">
     <Image
-      src={PosterImage}
-      alt="Loper Poster"
-      width={PosterImage.width / 3}
+      src={PosterWall}
+      alt="Poster on Wall"
+      width={PosterWall.width / 3}
       class="grow"
     />
     <Image
-      src={FlyerImage}
-      alt="Brick Billboard"
-      width={FlyerImage.width / 3}
+      src={PosterRolled}
+      alt="Rolled Poster"
+      width={PosterRolled.width / 3}
       class="grow"
     />
   </div>

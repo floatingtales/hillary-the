@@ -1,0 +1,34 @@
+---
+import HeadingImage from "@assets/project-assets/bintang-kecil-merdeka/heading.png";
+import Billboard from "@components/project/bintang-kecil-merdeka/Billboard.astro";
+import Brochure from "@components/project/bintang-kecil-merdeka/Brochure.astro";
+import ColorPalette from "@components/project/bintang-kecil-merdeka/ColorPalette.astro";
+import LogoDesign from "@components/project/bintang-kecil-merdeka/LogoDesign.astro";
+import MainMascot from "@components/project/bintang-kecil-merdeka/MainMascot.astro";
+import Poster from "@components/project/bintang-kecil-merdeka/Poster.astro";
+import SocialMedia from "@components/project/bintang-kecil-merdeka/SocialMedia.astro";
+import SupportingCharacter from "@components/project/bintang-kecil-merdeka/SupportingCharacter.astro";
+import VisualElements from "@components/project/bintang-kecil-merdeka/VisualElements.astro";
+import Heading from "@components/project/shared/Heading.astro";
+import Layout from "@layouts/Layout.astro";
+
+const headingText =
+  "Bintang Kecil Merdeka is an event celebrating Indonesia's Independence Day on August 17, aiming to inspire children's talents and promote Kampung Bakat (Talent Village) around Surabaya.";
+---
+
+<Layout>
+  <div class="flex h-full w-full justify-center">
+    <div class="flex w-full max-w-7xl flex-col gap-4">
+      <Heading headingText={headingText} headingImage={HeadingImage} />
+      <LogoDesign />
+      <ColorPalette />
+      <MainMascot />
+      <SupportingCharacter />
+      <VisualElements />
+      <Brochure />
+      <Billboard />
+      <Poster />
+      <SocialMedia />
+    </div>
+  </div>
+</Layout>

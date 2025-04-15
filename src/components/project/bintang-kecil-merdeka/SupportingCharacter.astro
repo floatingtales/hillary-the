@@ -1,0 +1,34 @@
+---
+import Budi from "@assets/project-assets/bintang-kecil-merdeka/budi.png";
+import Laras from "@assets/project-assets/bintang-kecil-merdeka/laras.png";
+import Reno from "@assets/project-assets/bintang-kecil-merdeka/reno.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="supporting-characters"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="SUPPORTING CHARACTERS" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image src={Reno} width={Reno.width / 3} alt="Reno" class="grow" />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Name: Reno
+      </p>
+    </div>
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image src={Laras} width={Laras.width / 3} alt="Laras" class="grow" />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Name: Laras
+      </p>
+    </div>
+    <div class="flex grow flex-col items-center justify-center gap-8">
+      <Image src={Budi} width={Budi.width / 3} alt="Budi" class="grow" />
+      <p class="text-primary font-display text-center text-2xl font-bold">
+        Name: Budi
+      </p>
+    </div>
+  </div>
+</section>

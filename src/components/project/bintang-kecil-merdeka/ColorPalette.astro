@@ -1,0 +1,18 @@
+---
+import ColorSwatch from "@components/project/shared/ColorSwatch.astro";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+
+const colors = ["#58D2DB", "#FFCE00", "#1F4352", "#DB157E", "#C97BFC"];
+---
+
+<section
+  id="color-palette"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="COLOR PALETTE" />
+  <ColorSwatch colors={colors} />
+  <p class="font-display text-primary w-5/6 text-center text-2xl">
+    The logo uses bright colors to align with Kampung Bakat’s series of events,
+    which focus on independence competitions for children.
+  </p>
+</section>

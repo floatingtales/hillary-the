@@ -1,0 +1,27 @@
+---
+import BillboardBrick from "@assets/project-assets/bintang-kecil-merdeka/billboard-brick.png";
+import BillboardVertical from "@assets/project-assets/bintang-kecil-merdeka/billboard-vertical.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="billboard"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="BILLBOARD" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <Image
+      src={BillboardBrick}
+      alt="Billboard on Brick Wall"
+      width={BillboardBrick.width / 3}
+      class="grow"
+    />
+    <Image
+      src={BillboardVertical}
+      alt="Vertical Billboard"
+      width={BillboardVertical.width / 3}
+      class="grow"
+    />
+  </div>
+</section>

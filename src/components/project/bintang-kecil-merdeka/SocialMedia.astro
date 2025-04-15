@@ -1,0 +1,31 @@
+---
+import InstagramFeed from "@assets/project-assets/bintang-kecil-merdeka/instagram-feed.png";
+import InstagramMockup from "@assets/project-assets/bintang-kecil-merdeka/instagram-mockup.png";
+import InstagramStory from "@assets/project-assets/bintang-kecil-merdeka/instagram-story.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="social-media"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="SOCIAL MEDIA" />
+  <div class="mb-10 flex w-full items-center justify-center gap-12">
+    <Image
+      src={InstagramFeed}
+      alt="Instagram Feed"
+      width={InstagramFeed.width / 3}
+    />
+    <Image
+      src={InstagramMockup}
+      alt="Instagram Mockup"
+      width={InstagramMockup.width / 3}
+    />
+    <Image
+      src={InstagramStory}
+      alt="Instagram Story"
+      width={InstagramStory.width / 3}
+    />
+  </div>
+</section>

@@ -1,0 +1,27 @@
+---
+import BrochureBack from "@assets/project-assets/bintang-kecil-merdeka/brochure-back.png";
+import BrochureFront from "@assets/project-assets/bintang-kecil-merdeka/brochure-front.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="brochure"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="BROCHURE" />
+  <div class="flex w-full items-center justify-center gap-8">
+    <Image
+      src={BrochureFront}
+      alt="Brochure Front"
+      width={BrochureFront.width / 3}
+      class="grow"
+    />
+    <Image
+      src={BrochureBack}
+      alt="Brochure Back"
+      width={BrochureBack.width / 3}
+      class="grow"
+    />
+  </div>
+</section>

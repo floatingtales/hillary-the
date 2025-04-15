@@ -1,0 +1,22 @@
+---
+import VisualElementsImage from "@assets/project-assets/bintang-kecil-merdeka/visual-elements.png";
+import TitleHorizontalLine from "@components/project/shared/TitleHorizontalLine.astro";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="visual-elements"
+  class="flex w-full flex-col items-center justify-center gap-16"
+>
+  <TitleHorizontalLine title="VISUAL ELEMENTS" />
+  <Image
+    src={VisualElementsImage}
+    width={VisualElementsImage.width / 3}
+    alt="Visual Elements"
+    class="grow"
+  />
+  <p class="font-display text-primary w-5/6 text-center text-2xl">
+    The following are supporting visual elements for Bintang Kecil Merdeka
+    event.
+  </p>
+</section>
