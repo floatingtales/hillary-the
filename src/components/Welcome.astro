@@ -1,3 +1,17 @@
 ---
-
+import ArrowRight from "@assets/index/arrow.svg";
+import HillaryCenter from "@assets/index/image-center.png";
+import { Image } from "astro:assets";
 ---
+
+<div class="h-full">
+  <Image
+    src={HillaryCenter}
+    alt="Cartoon Hillary"
+    width={HillaryCenter.width / 2.5}
+    class="hillary-cartoon"
+  />
+  <a href="/project">
+    <Image src={ArrowRight} alt="To Projects" width={140} class="arrow-right" />
+  </a>
+</div>

@@ -24,3 +24,16 @@
 .navbar-text-shadow {
   -webkit-text-stroke: 2px #4554a5;
 }
+
+.hillary-cartoon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.arrow-right {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
