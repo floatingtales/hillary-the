@@ -11,41 +11,24 @@ import WelcomeImage from "@assets/index/welcome.svg";
 import { Image } from "astro:assets";
 ---
 
-<div class="h-full">
-  <Image
-    src={stationaryCloud1}
-    alt="cloud"
-    width={650}
-    id="stationary-cloud-1"
-  />
-  <Image
-    src={stationaryCloud2}
-    alt="cloud"
-    width={600}
-    id="stationary-cloud-2"
-  />
-  <Image
-    src={stationaryCloud3}
-    alt="cloud"
-    width={600}
-    id="stationary-cloud-3"
-  />
-  <Image
-    src={stationaryCloud4}
-    alt="cloud  "
-    width={650}
-    id="stationary-cloud-4"
-  />
-  <Image src={WelcomeImage} alt="welcome" id="welcome" />
-  <Image src={ToHillary} alt="to hillary's" id="to-hillary" />
-  <Image src={Portfolio} alt="portfolio" id="portfolio" />
-  <Image
-    src={HillaryCenter}
-    alt="Cartoon Hillary"
-    width={HillaryCenter.width / 2.5}
-    id="hillary-cartoon"
-  />
-  <a href="/project">
-    <Image src={ArrowRight} alt="To Projects" width={140} id="arrow-right" />
-  </a>
-</div>
+<Image src={stationaryCloud1} alt="cloud" width={650} id="stationary-cloud-1" />
+<Image src={stationaryCloud2} alt="cloud" width={600} id="stationary-cloud-2" />
+<Image src={stationaryCloud3} alt="cloud" width={600} id="stationary-cloud-3" />
+<Image
+  src={stationaryCloud4}
+  alt="cloud  "
+  width={650}
+  id="stationary-cloud-4"
+/>
+<Image src={WelcomeImage} alt="welcome" id="welcome" />
+<Image src={ToHillary} alt="to hillary's" id="to-hillary" />
+<Image src={Portfolio} alt="portfolio" id="portfolio" />
+<Image
+  src={HillaryCenter}
+  alt="Cartoon Hillary"
+  width={HillaryCenter.width / 2.5}
+  id="hillary-cartoon"
+/>
+<a href="/project">
+  <Image src={ArrowRight} alt="To Projects" width={140} id="arrow-right" />
+</a>

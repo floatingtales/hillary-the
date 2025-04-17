@@ -1,0 +1,43 @@
+---
+import MovingCloud1 from "@assets/layout-assets/moving-cloud-1.png";
+import MovingCloud2 from "@assets/layout-assets/moving-cloud-2.png";
+import MovingCloud3 from "@assets/layout-assets/moving-cloud-3.png";
+import MovingCloud4 from "@assets/layout-assets/moving-cloud-4.png";
+import MovingCloud5 from "@assets/layout-assets/moving-cloud-5.png";
+import MovingCloud6 from "@assets/layout-assets/moving-cloud-6.png";
+import MovingCloud7 from "@assets/layout-assets/moving-cloud-7.png";
+import { Image } from "astro:assets";
+---
+
+<Image src={MovingCloud1} alt="Moving Cloud 1" id="cloud-1" />
+<Image src={MovingCloud2} alt="Moving Cloud 2" width={400} id="cloud-2" />
+<Image src={MovingCloud3} alt="Moving Cloud 3" width={400} id="cloud-3" />
+<Image src={MovingCloud4} alt="Moving Cloud 4" width={400} id="cloud-4" />
+<Image src={MovingCloud5} alt="Moving Cloud 5" width={400} id="cloud-5" />
+<Image src={MovingCloud6} alt="Moving Cloud 6" width={400} id="cloud-6" />
+<Image src={MovingCloud7} alt="Moving Cloud 7" width={400} id="cloud-7" />
+
+<script>
+  const parent = document.getElementById("parent")!;
+  const cloud1 = document.getElementById("cloud-1")!;
+  const cloud2 = document.getElementById("cloud-2")!;
+  const cloud3 = document.getElementById("cloud-3")!;
+  const cloud4 = document.getElementById("cloud-4")!;
+  const cloud5 = document.getElementById("cloud-5")!;
+  const cloud6 = document.getElementById("cloud-6")!;
+  const cloud7 = document.getElementById("cloud-7")!;
+
+  function checkVisibility() {
+    cloud1.style.display = parent.offsetHeight > 366 ? "block" : "none";
+    cloud2.style.display = parent.offsetHeight > 470 ? "block" : "none";
+    cloud3.style.display = parent.offsetHeight > 825 ? "block" : "none";
+    cloud4.style.display = parent.offsetHeight > 1191 ? "block" : "none";
+    cloud5.style.display = parent.offsetHeight > 1353 ? "block" : "none";
+    cloud6.style.display = parent.offsetHeight > 1475 ? "block" : "none";
+    cloud7.style.display = parent.offsetHeight > 1750 ? "block" : "none";
+  }
+
+  const observer = new ResizeObserver(checkVisibility);
+  observer.observe(parent);
+  checkVisibility();
+</script>

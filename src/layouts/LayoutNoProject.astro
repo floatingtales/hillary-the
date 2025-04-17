@@ -1,4 +1,5 @@
 ---
+import MovingCloudBg from "@components/MovingCloudBg.astro";
 import NavbarNoProject from "@components/NavbarNoProject.astro";
 import "@styles/global.css";
 import { ClientRouter } from "astro:transitions";
@@ -15,10 +16,15 @@ import { ClientRouter } from "astro:transitions";
     <title>Hillary The's Portfolio</title>
   </head>
   <body>
-    <div class="bg-background relative min-h-full w-full">
+    <div
+      class="bg-background relative min-h-svh w-full overflow-hidden"
+      id="parent"
+    >
       <NavbarNoProject />
-
-      <slot />
+      <MovingCloudBg />
+      <div class="h-full">
+        <slot />
+      </div>
     </div>
   </body><style>
     html,
