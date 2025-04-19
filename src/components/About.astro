@@ -23,7 +23,12 @@ import { Image } from "astro:assets";
   >
     <div class="flex w-full">
       <div class="flex grow flex-col justify-center gap-6">
-        <Image src={HillaryThe} alt="Name Tag" width={550} />
+        <Image
+          src={HillaryThe}
+          alt="Name Tag"
+          widths={[435, 550]}
+          sizes={"max-width()"}
+        />
         <div class="border-primary z-10 mx-5 h-52 w-0 border-2"></div>
         <a href="https://wa.me/6287864397555" target="_blank">
           <Image src={Phone} alt="Name Tag" width={52} />
