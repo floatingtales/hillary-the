@@ -9,13 +9,13 @@ import MovingCloud7 from "@assets/layout-assets/moving-cloud-7.png";
 import { Image } from "astro:assets";
 ---
 
-<Image src={MovingCloud1} alt="Moving Cloud 1" id="cloud-1" />
-<Image src={MovingCloud2} alt="Moving Cloud 2" width={400} id="cloud-2" />
-<Image src={MovingCloud3} alt="Moving Cloud 3" width={400} id="cloud-3" />
-<Image src={MovingCloud4} alt="Moving Cloud 4" width={400} id="cloud-4" />
-<Image src={MovingCloud5} alt="Moving Cloud 5" width={400} id="cloud-5" />
-<Image src={MovingCloud6} alt="Moving Cloud 6" width={400} id="cloud-6" />
-<Image src={MovingCloud7} alt="Moving Cloud 7" width={400} id="cloud-7" />
+<Image src={MovingCloud1} alt="Moving Cloud 1" id="cloud-1" loading="eager" />
+<Image src={MovingCloud2} alt="Moving Cloud 2" id="cloud-2" loading="eager" />
+<Image src={MovingCloud3} alt="Moving Cloud 3" id="cloud-3" loading="eager" />
+<Image src={MovingCloud4} alt="Moving Cloud 4" id="cloud-4" loading="eager" />
+<Image src={MovingCloud5} alt="Moving Cloud 5" id="cloud-5" loading="eager" />
+<Image src={MovingCloud6} alt="Moving Cloud 6" id="cloud-6" loading="eager" />
+<Image src={MovingCloud7} alt="Moving Cloud 7" id="cloud-7" loading="eager" />
 
 <script>
   const parent = document.getElementById("parent")!;

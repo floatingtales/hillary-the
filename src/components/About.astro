@@ -1,0 +1,58 @@
+---
+import Ampersand from "@assets/about/ampersand.svg";
+import Email from "@assets/about/email.svg";
+import GraphicDesigner from "@assets/about/graphic-designer.svg";
+import HillaryThe from "@assets/about/hillary-the.svg";
+import Illustrator from "@assets/about/illustrator.svg";
+import Linkedin from "@assets/about/linkedin.svg";
+import Phone from "@assets/about/phone.svg";
+import ProfileOne from "@assets/about/profile-1.png";
+import { Image } from "astro:assets";
+---
+
+<div class="relative mt-12 flex px-40">
+  <div class="flex grow flex-col justify-center gap-6">
+    <Image src={HillaryThe} alt="Name Tag" width={550} />
+    <div class="border-primary z-10 mx-5 h-52 w-0 border-2"></div>
+    <a href="https://wa.me/6287864397555" target="_blank">
+      <Image src={Phone} alt="Name Tag" width={52} />
+    </a>
+    <a
+      href="mailto:hillthe27@gmail.com?subject=Hi!%20I'd%20love%20to%20connect%20with%20you!"
+      target="_blank"
+    >
+      <Image src={Email} alt="Name Tag" width={52} />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/hillary-the-08824a25b/"
+      target="_blank"
+    >
+      <Image src={Linkedin} alt="Name Tag" width={52} />
+    </a>
+  </div>
+  <Image
+    src={ProfileOne}
+    alt="Profile Headshot"
+    width={ProfileOne.width / 2}
+    class="grow"
+  />
+  <div class="flex flex-1/2 flex-col items-end gap-5 self-center">
+    <div class="flex flex-col items-end gap-2">
+      <Image
+        src={GraphicDesigner}
+        alt="Graphic Designer Text"
+        width={575}
+        class="items-end justify-end"
+      />
+      <div class="flex w-full justify-end gap-8">
+        <Image src={Ampersand} alt="&" width={60} />
+        <Image src={Illustrator} alt="Profile Headshot" width={420} />
+      </div>
+    </div>
+    <p class="text-primary font-display w-3/4 text-justify text-2xl text-wrap">
+      I'm a graphic designer and illustrator based in Indonesia. I'm known for
+      precision, adaptability, and creativity. I deliver innovative designs on
+      time, ensuring quality and impact.
+    </p>
+  </div>
+</div>
